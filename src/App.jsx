@@ -43,8 +43,11 @@ function App() {
 
               document.getElementById("info-success").style.display = "flex"
               document.getElementById("info-error").style.display = "none"
+            } else if (searchTerm === "" || searchTerm === null) {
+              alert("Digite o número do pedido.")
+              document.getElementById("info-success").style.display = "none"
+              document.getElementById("info-error").style.display = "none"
             } else {
-
               document.getElementById("info-success").style.display = "none"
               document.getElementById("info-error").style.display = ""
             }
