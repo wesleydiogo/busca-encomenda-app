@@ -1,0 +1,62 @@
+#info-success {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#info-success #items-response-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#info-success #items-response-title .item {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  min-width: 350px;
+  margin: 5px;
+  text-align: center;
+}
+#info-success #items-response-title .response {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #006699;
+}
+#info-success #items-response-title .title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #0099cc;
+}
+#info-success .item {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  min-width: 350px;
+  margin: 5px;
+  text-align: center;
+}
+#info-success .response {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #006699;
+}
+#info-success .title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #0099cc;
+}
+
+@media screen and (max-width: 768px) {
+  #info-success {
+    flex-direction: column;
+  }
+  #info-success #box-order-price {
+    display: none !important;
+  }
+  #info-success #items-response-title {
+    flex-direction: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=InfoSuccess.css.map */
