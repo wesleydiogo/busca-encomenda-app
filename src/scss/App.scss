@@ -13,27 +13,29 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-
+    
     .logo {
         margin: 0 auto;
     }
-
+    
     .tittle {
         font-size: 1.5rem;
         font-style: italic;
         font-weight: 700;
         color: #007dbf;
-
+        text-align: center;
+        
         margin-top: 80px;
     }
 
     form {
-        white-space: nowrap;
-        display: inline-block;
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        white-space: nowrap;
+
         height: 40px;
-        width: 280px;
+        width: 300px;
         margin: 30px auto 0;
         padding: 0 10px;
 
@@ -41,19 +43,26 @@ header {
         border-radius: 30px;
         -moz-border-radius: 30px;
         -webkit-border-radius: 30px;
-
+        
         input {
             text-align: center;
             font-size: 1.2em;
             font-style: italic;
+
+            padding-left: 10px;
+
             border: none;
             outline: none;
+            border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
         }
 
         #btn-buscar {
+            display: block;
             position: relative;
-            right: 0px;
             top: 50%;
+            height: 1.8em;
             transform: translateY(-50%);
             cursor: pointer;
         }

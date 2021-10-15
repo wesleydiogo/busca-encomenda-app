@@ -13,7 +13,7 @@ function App() {
 
   // DECLARE VARIABLES
   const [searchTerm, setSearchTerm] = useState("");
-  const [data, setData] = useState([""])
+  const [data, setData] = useState([""]);
   const conversorBRL = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' })
   var clientNameId = document.getElementById("client-name");
   var orderPriceId = document.getElementById("order-price");
@@ -80,7 +80,7 @@ function App() {
             placeholder="Digite o número do pedido"
             onChange={e => setSearchTerm(e.target.value)}
           />
-          <img id="btn-buscar" type="submit" src={lupa} alt="Buscar" onClick={handleClick} />
+          <img id="btn-buscar" type="button" src={lupa} alt="Buscar" onClick={handleClick} />
         </form>
       </header>
 
