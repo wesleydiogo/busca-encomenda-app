@@ -19,7 +19,7 @@ function App() {
   var orderPriceId = document.getElementById("order-price");
   var orderDateId = document.getElementById("order-date");
   var orderStatusId = document.getElementById("order-status");
-  const url = "http://localhost:3000/encomendas";
+  const url = "http://192.168.15.6:3000/encomendas";
 
   // DECLARE FUNCTIONS
   const orderStatus = (entregue) => entregue ? "Entregue" : "Entregar";
